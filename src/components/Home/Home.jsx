@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Heropage from './Herosection';
 import { Box, Typography ,Grid, Card,CardContent,CardMedia,CardActionArea, Button,Stack, CircularProgress} from '@mui/material';
 import {Swiper,SwiperSlide} from "swiper/react";
-import {Autoplay,Navigation,Pagination} from "swiper/modules"
+import {Navigation,Pagination} from "swiper/modules"
 import "swiper/css";
 import "swiper/css/navigation";
 import axios from 'axios';
