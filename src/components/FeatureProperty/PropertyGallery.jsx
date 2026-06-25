@@ -27,7 +27,7 @@ function PropertyCard() {
   const {id} = useParams();
 
   useEffect(()=>{
-    axios.get(`http://127.0.0.1:8000/api/business/${id}`,
+    axios.get(`https://web-production-2b5327.up.railway.app/api/business/${id}`,
      {
       headers:{
         Authorization:`Bearer ${localStorage.getItem('access_token')}`
@@ -84,7 +84,7 @@ function PropertyCard() {
           component="img"
             src={
                 data?.images_data?.[0]?.image
-                  ? `http://127.0.0.1:8000${data.images_data[0].image}`
+                  ? `https://web-production-2b5327.up.railway.app${data.images_data[0].image}`
                   : ""
                 }
           alt="property"

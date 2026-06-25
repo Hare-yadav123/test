@@ -27,7 +27,7 @@ const navigate = useNavigate();
         setLoading(true);
 
             const response = await axios.get(
-            "http://127.0.0.1:8000/api/business/"
+            "https://web-production-2b5327.up.railway.app/api/business/"
             );
 
             setFixData(response.data.data || []);
@@ -98,7 +98,7 @@ const navigate = useNavigate();
                         component="img"
                         image={
                         item?.images_data?.[0]?.image
-                            ? `http://127.0.0.1:8000${item.images_data[0].image}`
+                            ? `https://web-production-2b5327.up.railway.app${item.images_data[0].image}`
                             : ""
                         }
                         alt={item.businessname}

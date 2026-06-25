@@ -19,7 +19,7 @@ export default function FloorPlans() {
 
        <CardMedia
           component="img"
-          src="http://127.0.0.1:8000/static/property/images/3BHK.png"
+          src="https://web-production-2b5327.up.railway.app/static/property/images/3BHK.png"
           sx={{
             width:"100%" ,
             borderRadius: 2,

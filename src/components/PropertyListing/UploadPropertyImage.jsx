@@ -47,7 +47,7 @@ const  PropertyImage = ()=> {
         try{
             const token = localStorage.getItem("access_token")
             console.log("Token:",token)
-            const response = await axios.post(`http://127.0.0.1:8000/api/images/`,
+            const response = await axios.post(`https://web-production-2b5327.up.railway.app/api/images/`,
                 {
                     image:data.image
                 },

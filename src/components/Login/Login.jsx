@@ -80,7 +80,7 @@ export const Login = () => {
   };
 
     try{
-        const response = await axios.post(`http://127.0.0.1:8000/api/lgi/`,{
+        const response = await axios.post(`https://web-production-2b5327.up.railway.app/api/lgi/`,{
           mobileNo:loginForm.mobileNo
         },{"headers":{"Content-Type":"application/json"}})
 
@@ -91,7 +91,7 @@ export const Login = () => {
         }));
         setCaptchazKey(response.data.captcha_key);
         
-        setCaptchaUrl(`http://127.0.0.1:8000/api/lgi/${response.data.captcha_key}/`);
+        setCaptchaUrl(`https://web-production-2b5327.up.railway.app/api/lgi/${response.data.captcha_key}/`);
       }catch(error){
         console.log("failed to catch captcha");
         if(error.response?.data?.mobileNo){
@@ -140,7 +140,7 @@ export const Login = () => {
     
     setLoading(true);
     try{
-      const response = await axios.post("http://127.0.0.1:8000/api/cla/",
+      const response = await axios.post("https://web-production-2b5327.up.railway.app/api/cla/",
         {
           mobileNo:loginForm.mobileNo,
           captcha_key:captchakey,
@@ -187,7 +187,7 @@ export const Login = () => {
     sx={{
       minHeight:"100vh",
       width:"100%",
-      backgroundImage:`url(http://127.0.0.1:8000/static/property/images/reg2.png)`,
+      backgroundImage:`url(https://web-production-2b5327.up.railway.app/static/property/images/reg2.png)`,
       backgroundColor:"#fff",
       backgroundPosition:"center",
       backgroundRepeat:"no-repeat",
@@ -239,7 +239,7 @@ export const Login = () => {
           mb:2,
           minHeight:"100vh",
           width:"30%",
-          backgroundImage:`url(http://127.0.0.1:8000/static/property/images/reg.png)`,
+          backgroundImage:`url(https://web-production-2b5327.up.railway.app/static/property/images/reg.png)`,
           backgroundPosition:"center",
           backgroundSize:"cover",
           backgroundRepeat:"no-repeat",

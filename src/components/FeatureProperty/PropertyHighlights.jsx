@@ -26,7 +26,7 @@ export default function PropertyHighlights() {
 
   useEffect(()=>{
 
-    axios.get(`http://127.0.0.1:8000/api/business/${id}/`,
+    axios.get(`https://web-production-2b5327.up.railway.app/api/business/${id}/`,
       {
         headers:{
           Authorization:`Bearer ${localStorage.getItem("access_token")}`

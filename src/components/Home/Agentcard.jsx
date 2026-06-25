@@ -41,7 +41,7 @@ export const Agentcard = () => {
   useEffect(()=>{
     const getdata = async()=>{
       try{
-        const res = await axios.get(`http://127.0.0.1:8000/api/agent`)
+        const res = await axios.get(`https://web-production-2b5327.up.railway.app/api/agent`)
         setLimitData(prev=>(
           offset===0 ? res.data.data
           :[...prev,res.data.data]
@@ -155,7 +155,7 @@ export const Agentcard = () => {
               >
                 <CardMedia
                 component="img"
-                image= {`http://127.0.0.1:8000${item.profileimage}`}  //{item.image}
+                image= {`https://web-production-2b5327.up.railway.app${item.profileimage}`}  //{item.image}
                 sx={{
                   height:40,
                   width:40,
@@ -347,7 +347,7 @@ export const Agentcard = () => {
               >
                 <CardMedia
                 component="img"
-                image={item.image}      //{`http://127.0.0.1:8000${item.profileimage}`}
+                image={item.image}      //{`https://web-production-2b5327.up.railway.app${item.profileimage}`}
                 sx={{
                   height:40,
                   width:40,

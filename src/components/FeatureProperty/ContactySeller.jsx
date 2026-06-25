@@ -55,7 +55,7 @@ export default function ContactSeller() {
       //make api call to get contact details
       const token = localStorage.getItem("access_token")
       console.log("Token:",token)
-      const response = await axios.post("http://127.0.0.1:8000/api/contact/",
+      const response = await axios.post("https://web-production-2b5327.up.railway.app/api/contact/",
         {
           property : id,
           name: form.name,

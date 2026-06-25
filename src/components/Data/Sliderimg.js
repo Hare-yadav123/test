@@ -3,83 +3,83 @@ import React from 'react'
 const Sliderimg = [   
     {
         id:1,
-        image:"http://127.0.0.1:8000/static/property/images/building1.jpg"
+        image:"https://web-production-2b5327.up.railway.app/static/property/images/building1.jpg"
     },
     {
         id:2,
-        image:"http://127.0.0.1:8000/static/property/images/building2.jpg"
+        image:"https://web-production-2b5327.up.railway.app/static/property/images/building2.jpg"
     },
     {
         id:3,
-        image:"http://127.0.0.1:8000/static/property/images/building3.jpg"
+        image:"https://web-production-2b5327.up.railway.app/static/property/images/building3.jpg"
     },
     {
         id:4,
-        image:"http://127.0.0.1:8000/static/property/images/building4.jpg"
+        image:"https://web-production-2b5327.up.railway.app/static/property/images/building4.jpg"
     },
     {
         id:5,
-        image:"http://127.0.0.1:8000/static/property/images/building5.jpg"
+        image:"https://web-production-2b5327.up.railway.app/static/property/images/building5.jpg"
     },
     {
         id:6,
-        image:"http://127.0.0.1:8000/static/property/images/building6.jpg"
+        image:"https://web-production-2b5327.up.railway.app/static/property/images/building6.jpg"
     },
     {
         id:7,
-        image:"http://127.0.0.1:8000/static/property/images/building7.jpg"
+        image:"https://web-production-2b5327.up.railway.app/static/property/images/building7.jpg"
     },
     {
         id:8,
-        image:"http://127.0.0.1:8000/static/property/images/building8.jpg"
+        image:"https://web-production-2b5327.up.railway.app/static/property/images/building8.jpg"
     },
     {
         id:9,
-        image:"http://127.0.0.1:8000/static/property/images/building9.jpg"
+        image:"https://web-production-2b5327.up.railway.app/static/property/images/building9.jpg"
     },
     {
         id:10,
-        image:"http://127.0.0.1:8000/static/property/images/one.jpg"
+        image:"https://web-production-2b5327.up.railway.app/static/property/images/one.jpg"
     },
     {
         id:11,
-        image:"http://127.0.0.1:8000/static/property/images/plot0.jpg"
+        image:"https://web-production-2b5327.up.railway.app/static/property/images/plot0.jpg"
     },
     {
         id:12,
-        image:"http://127.0.0.1:8000/static/property/images/plot1.png"
+        image:"https://web-production-2b5327.up.railway.app/static/property/images/plot1.png"
     },
     {
         id:13,
-        image:"http://127.0.0.1:8000/static/property/images/plot2.png"
+        image:"https://web-production-2b5327.up.railway.app/static/property/images/plot2.png"
     },
     {
         id:14,
-        image:"http://127.0.0.1:8000/static/property/images/plot3.png"
+        image:"https://web-production-2b5327.up.railway.app/static/property/images/plot3.png"
     },
     {
         id:15,
-        image:"http://127.0.0.1:8000/static/property/images/plot4.png"
+        image:"https://web-production-2b5327.up.railway.app/static/property/images/plot4.png"
     },
     {
         id:16,
-        image:"http://127.0.0.1:8000/static/prperty/images/plot5.png"
+        image:"https://web-production-2b5327.up.railway.app/static/prperty/images/plot5.png"
     },
     {
         id:17,
-        image:"http://127.0.0.1:8000/static/property/images/plot6.png"
+        image:"https://web-production-2b5327.up.railway.app/static/property/images/plot6.png"
     },
     {
         id:18,
-        image:"http://127.0.0.1:8000/static/property/images/plot7.png"
+        image:"https://web-production-2b5327.up.railway.app/static/property/images/plot7.png"
     },
     {
         id:19,
-        image:"http://127.0.0.1:8000/static/property/images/plot8.png"
+        image:"https://web-production-2b5327.up.railway.app/static/property/images/plot8.png"
     },
     {
         id:20,
-        image:"http://127.0.0.1:8000/static/property/images/Untitled.png"
+        image:"https://web-production-2b5327.up.railway.app/static/property/images/Untitled.png"
     },
 ]
 export default Sliderimg;

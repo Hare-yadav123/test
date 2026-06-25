@@ -23,8 +23,8 @@ import { KeyboardArrowDown } from "@mui/icons-material";
 import { blue } from "@mui/material/colors";
 
 const images = [
-  "http://127.0.0.1:8000/static/property/images/plot4.png",
-  "http://127.0.0.1:8000/static/property/images/plot5.png",
+  "https://web-production-2b5327.up.railway.app/static/property/images/plot4.png",
+  "https://web-production-2b5327.up.railway.app/static/property/images/plot5.png",
 ]
 
 const Heropage = () => {
@@ -55,7 +55,7 @@ const Heropage = () => {
   // search button --------------------------------
   const handleSearch = async(e)=>{
     try{
-      const response = await axios.get(`http://127.0.0.1:8000/api/search/?q=${query}`);
+      const response = await axios.get(`https://web-production-2b5327.up.railway.app/api/search/?q=${query}`);
       setData(response.data);
     }catch(e){
       setError(e.message);

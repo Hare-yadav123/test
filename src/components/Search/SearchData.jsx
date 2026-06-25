@@ -1,6 +1,6 @@
 const searchProperty = () => {
 
- axios.get(`http://127.0.0.1:8000/api/properties/search/`,{
+ axios.get(`https://web-production-2b5327.up.railway.app/api/properties/search/`,{
    params:{
       city: city,
       bhk: bhk,

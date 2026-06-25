@@ -27,14 +27,14 @@ const  Publishprop = ()=> {
         setLoading(true);
         const fetchdata = async (id) =>{
             try{
-                const locationdata = await axios.get(`http://127.0.0.1:8000/api/location/`)
+                const locationdata = await axios.get(`https://web-production-2b5327.up.railway.app/api/location/`)
                 setLocation(locationdata.data.data)
                 
-                const propertytypedata = await axios.get(`http://127.0.0.1:8000/api/type/`)
+                const propertytypedata = await axios.get(`https://web-production-2b5327.up.railway.app/api/type/`)
                 setPropertyType(propertytypedata.data.data)
-                const statusdata = await axios.get(`http://127.0.0.1:8000/api/status/`)
+                const statusdata = await axios.get(`https://web-production-2b5327.up.railway.app/api/status/`)
                 setStatus(statusdata.data.data)
-                const imagedata = await axios.get(`http://127.0.0.1:8000/api/images/`)
+                const imagedata = await axios.get(`https://web-production-2b5327.up.railway.app/api/images/`)
                 setImage(imagedata.data.data)
             }catch(e){
                 console.log(e);
@@ -94,7 +94,7 @@ const  Publishprop = ()=> {
         try{
             const token = localStorage.getItem("access_token")
             console.log("Token:",token)
-            const response = await axios.post(`http://127.0.0.1:8000/api/business/`,
+            const response = await axios.post(`https://web-production-2b5327.up.railway.app/api/business/`,
                 {
                     businessname:data.businessname,
                     description:data.description,

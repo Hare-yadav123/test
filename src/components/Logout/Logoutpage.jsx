@@ -22,7 +22,7 @@ export const Logout = () => {
                 const token = localStorage.getItem("token");
 
                 if(refresh && token){
-                    await axios.post(`http://127.0.0.1:8000/api/logout/`,
+                    await axios.post(`https://web-production-2b5327.up.railway.app/api/logout/`,
                     {refresh},
                     {headers: {Authorization: `Bearer ${token}`}}
                     );

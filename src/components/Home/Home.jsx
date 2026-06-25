@@ -17,7 +17,7 @@ import Bot from "../Homeassist/Bot.jsx";
 import { useNavigate }  from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import {Link } from 'react-router-dom';
-const video = ['http://127.0.0.1:8000/static/property/images/video1.mp4']
+const video = ['https://web-production-2b5327.up.railway.app/static/property/images/video1.mp4']
 
 export const Home = () => {
 
@@ -40,7 +40,7 @@ export const Home = () => {
   useEffect(()=>{
     const loaddata = async()=>{
       try{
-        const res = await axios.get(`http://127.0.0.1:8000/api/business/`)
+        const res = await axios.get(`https://web-production-2b5327.up.railway.app/api/business/`)
         setData(res.data.data)
       }catch(e){
         setError(e.message);
@@ -54,7 +54,7 @@ export const Home = () => {
   useEffect(()=>{
     const getdtata = async()=>{
       try{
-        const response = await axios.get(`http://127.0.0.1:8000/api/business/?limit=${limit}&offset=${offset}`)
+        const response = await axios.get(`https://web-production-2b5327.up.railway.app/api/business/?limit=${limit}&offset=${offset}`)
         setLimitData(prev=> 
           offset === 0 ? response.data.data
           :[...prev,response.data.data]
@@ -76,7 +76,7 @@ export const Home = () => {
       try{
         setLoading(true);
 
-        const userdata =await axios.get(`http://127.0.0.1:8000/api/business/?fixed=${fixed}&offset=${offset}`)
+        const userdata =await axios.get(`https://web-production-2b5327.up.railway.app/api/business/?fixed=${fixed}&offset=${offset}`)
         setFixData((prev)=>
           // offset===0 ? userdata.data.data
           // :[...prev,userdata.data.data]
@@ -391,7 +391,7 @@ export const Home = () => {
                         
                       <CardMedia 
                       component="video"
-                      image='http://127.0.0.1:8000/static/property/images/video.mp4'
+                      image='https://web-production-2b5327.up.railway.app/static/property/images/video.mp4'
                       autoPlay        
                       muted
                       loop
@@ -495,7 +495,7 @@ export const Home = () => {
                       <CardMedia 
                       component="img"
                       alt='property'
-                      image={`http://127.0.0.1:8000${items.images_data[0]?.image}`}
+                      image={`https://web-production-2b5327.up.railway.app${items.images_data[0]?.image}`}
                       sx={{ 
                         height:160,
                         objectFit:"cover",
@@ -757,7 +757,7 @@ export const Home = () => {
                         <CardMedia
                           component="img"
                           alt='properties'
-                          image={`http://127.0.0.1:8000${item.images_data?.[0]?.image}`}
+                          image={`https://web-production-2b5327.up.railway.app${item.images_data?.[0]?.image}`}
                           sx={{
                             height: 150,
                             width: 150,

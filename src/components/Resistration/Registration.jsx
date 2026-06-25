@@ -104,7 +104,7 @@ export const Registration = () => {
     
     setLoding(true);
     try{
-      const response = await axios.post("http://127.0.0.1:8000/api/signup/",userData,
+      const response = await axios.post("https://web-production-2b5327.up.railway.app/api/signup/",userData,
         { headers :{"Content-Type":"application/json"}}
       );
 
@@ -134,7 +134,7 @@ export const Registration = () => {
     sx={{
       minHeight:"100vh",
       width:"100%",
-      backgroundImage:`url(http://127.0.0.1:8000/static/property/images/reg2.png)`,
+      backgroundImage:`url(https://web-production-2b5327.up.railway.app/static/property/images/reg2.png)`,
       backgroundColor:"#fff",
       backgroundPosition:"center",
       backgroundRepeat:"no-repeat",
@@ -187,7 +187,7 @@ export const Registration = () => {
           mb:5,
           minHeight:"100vh",
           width:"30%",
-          backgroundImage:`url(http://127.0.0.1:8000/static/property/images/reg.png)`,
+          backgroundImage:`url(https://web-production-2b5327.up.railway.app/static/property/images/reg.png)`,
           backgroundPosition:"center",
           backgroundSize:"cover",
           backgroundRepeat:"no-repeat"

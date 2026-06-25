@@ -58,7 +58,7 @@ export default function ContactSeller() {
       //make api call to get contact details
       const token = localStorage.getItem("access_token")
       console.log("Token:",token)
-      const response = await axios.post("http://127.0.0.1:8000/api/contact/",
+      const response = await axios.post("https://web-production-2b5327.up.railway.app/api/contact/",
         {
           property : id,
           name: form.name,
@@ -99,7 +99,7 @@ export default function ContactSeller() {
   useEffect(()=>{
     if(!id) return;
     
-    axios.get(`http://127.0.0.1:8000/api/agent/${id}/`,
+    axios.get(`https://web-production-2b5327.up.railway.app/api/agent/${id}/`,
       {
         headers:{
           Authorization:`Bearer ${localStorage.getItem("access_token")}`
@@ -150,7 +150,7 @@ export default function ContactSeller() {
         }}
         >
         <Avatar
-          src={agent?.profileimage ? `http://127.0.0.1:8000${agent.profileimage}` : ""}
+          src={agent?.profileimage ? `https://web-production-2b5327.up.railway.app${agent.profileimage}` : ""}
           alt="Agent Image"
           sx={{bgcolor: "#4caf50"}}
         >

@@ -92,19 +92,19 @@ const Propimage =   [
   },
   {
     "id": 10,
-    "image": "http://127.0.0.1:8000/static/property/images/Untitled.png",
+    "image": "https://web-production-2b5327.up.railway.app/static/property/images/Untitled.png",
     "newsheading": "Housing Demand Surges in Metro Cities",
     "newsdescription": "Housing demand remains strong across major metro cities as buyers prefer ready-to-move and mid-segment homes amid stable interest rates."
   },
   {
     "id": 11,
-    "image": "http://127.0.0.1:8000/static/property/images/building3.jpg",
+    "image": "https://web-production-2b5327.up.railway.app/static/property/images/building3.jpg",
     "newsheading": "Rental Market Sees Steady Growth",
     "newsdescription": "Urban migration and job expansion have led to a consistent rise in rental demand, especially in IT and commercial hubs."
   },
   {
     "id": 12,
-    "image": "http://127.0.0.1:8000/static/property/images/building1.jpg",
+    "image": "https://web-production-2b5327.up.railway.app/static/property/images/building1.jpg",
     "newsheading": "Developers Focus on Affordable Housing",
     "newsdescription": "Real estate developers are shifting focus towards affordable housing projects to attract first-time homebuyers."
   },
