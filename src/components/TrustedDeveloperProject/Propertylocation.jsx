@@ -7,7 +7,6 @@ import {
   Grid,
   IconButton
 } from "@mui/material";
-import { ZoomControl } from "react-leaflet";
 import { useParams } from "react-router-dom";
 import LocalHospitalIcon from "@mui/icons-material/LocalHospital";
 import CommuteIcon from "@mui/icons-material/Commute";
