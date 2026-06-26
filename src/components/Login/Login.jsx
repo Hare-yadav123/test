@@ -389,20 +389,13 @@ export const Login = () => {
                       alt='MND85M'
                       placeholder="HS6MP2"  
                       sx={{
-                        position:"relative",
                         display:"inline-flex",
-                        justifyContent:"center",
-                        alignItems:"center",
                         height:80,
                         width:250,
-                        mt:2,
                         border:"1px solid #ddd",
-                        color:"rgba(0,0,0,0.2)",
                         borderRadius:"10px",
                         p:"5px",
-                        py:1,
-                        fontFamily:"monospace",
-                        overflow:"hidden",
+                        objectFit:"contain"
                       }}
                       />
                     {/* )} */}
