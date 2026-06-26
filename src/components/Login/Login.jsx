@@ -394,7 +394,7 @@ export const Login = () => {
                         justifyContent:"center",
                         alignItems:"center",
                         height:80,
-                        width:250,
+                        width:120,
                         mt:2,
                         border:"1px solid #ddd",
                         color:"rgba(0,0,0,0.5)",
