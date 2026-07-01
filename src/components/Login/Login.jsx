@@ -168,18 +168,45 @@ export const Login = () => {
       setTimeout(()=>{navigate('/')},1000);
       
     }catch(error){
-      const mes = error.response?.data?.error || "Request failed!. Try again..." 
-      toast.error(mes)
+
+      console.log("API ERROR:", error.response?.data);
+
       setLoading(false);
-      console.log(error.response?.data);
+
       if(error.response?.data?.mobileNo){
-        toast.error(error.response.data.mobileNo[0])
+
+          toast.error(error.response.data.mobileNo[0]);
+
       }
       else if(error.response?.data?.captcha){
-        toast.error(error.response.data.captcha[0])
+
+          toast.error(error.response.data.captcha[0]);
+
       }
-  
+      else if(error.response?.data?.error){
+
+          toast.error(error.response.data.error);
+
+      }
+      else{
+
+          toast.error("Request failed! Try again...");
+
+      }
     }
+    // catch(error){
+    //   const mes = error.response?.data?.error || "Request failed!. Try again..." 
+    //   toast.error(mes)
+    //   setLoading(false);
+    //   console.log(error.response?.data);
+    //   if(error.response?.data?.mobileNo){
+    //     toast.error(error.response.data.mobileNo[0])
+    //   }
+    //   else if(error.response?.data?.captcha){
+    //     toast.error(error.response.data.captcha[0])
+    //   }
+  
+    // }
   }
 
   return (
