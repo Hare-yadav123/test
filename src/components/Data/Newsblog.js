@@ -2,31 +2,19 @@
 const News = [
   {
     "id": 1,
-<<<<<<< HEAD
     "image": "https://web-production-2b5327.up.railway.app/static/property/images/Untitled.png",
-=======
-    "image": "http://127.0.0.1:8000/static/property/images/Untitled.png",
->>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
     "newsheading": "Housing Demand Surges in Metro Cities",
     "newsdescription": "Housing demand remains strong across major metro cities as buyers prefer ready-to-move and mid-segment homes amid stable interest rates."
   },
   {
     "id": 2,
-<<<<<<< HEAD
     "image": "https://web-production-2b5327.up.railway.app/static/property/images/building3.jpg",
-=======
-    "image": "http://127.0.0.1:8000/static/property/images/building3.jpg",
->>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
     "newsheading": "Rental Market Sees Steady Growth",
     "newsdescription": "Urban migration and job expansion have led to a consistent rise in rental demand, especially in IT and commercial hubs."
   },
   {
     "id": 3,
-<<<<<<< HEAD
     "image": "https://web-production-2b5327.up.railway.app/static/property/images/building1.jpg",
-=======
-    "image": "http://127.0.0.1:8000/static/property/images/building1.jpg",
->>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
     "newsheading": "Developers Focus on Affordable Housing",
     "newsdescription": "Real estate developers are shifting focus towards affordable housing projects to attract first-time homebuyers."
   },

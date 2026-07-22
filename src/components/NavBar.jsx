@@ -50,10 +50,6 @@ export const NavBar = ()=>{
         >
           {/* logo */}
           <Box
-<<<<<<< HEAD
-=======
-          onClick={()=>navigate('/')}
->>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
           sx={{
             display:"flex",
             alignItems:'center',

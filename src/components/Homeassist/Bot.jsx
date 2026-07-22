@@ -48,11 +48,7 @@ const ChatBot = () => {
 
     try {
       const response = await fetch(
-<<<<<<< HEAD
         "https://web-production-2b5327.up.railway.app/api/aibot/",
-=======
-        "http://127.0.0.1:8000/api/aibot/",
->>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
         {
           method: "POST",
           headers: {

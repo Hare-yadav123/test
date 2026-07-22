@@ -38,11 +38,7 @@ export default function PropertyDetails() {
   const {id} = useParams();
 
   useEffect(()=>{
-<<<<<<< HEAD
     axios.get(`https://web-production-2b5327.up.railway.app/api/business/${id}/`,
-=======
-    axios.get(`http://127.0.0.1:8000/api/business/${id}/`,
->>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
       {
         headers:{
           Authorization:`Bearer ${localStorage.getItem("access_token")}`
@@ -219,11 +215,7 @@ export default function PropertyDetails() {
                 component="img"
                 src={
                   data?.images_data?.[0]?.image
-<<<<<<< HEAD
                   ? `https://web-production-2b5327.up.railway.app${data.images_data[0].image}`
-=======
-                  ? `http://127.0.0.1:8000${data.images_data[0].image}`
->>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
                   : "/no image found"
                 }                    //{propertyData.images[0]}
                 alt="property"

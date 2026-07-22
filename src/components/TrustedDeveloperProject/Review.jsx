@@ -79,11 +79,8 @@ export default function RatingsPreview() {
   const {id} = useParams();
 
   useEffect(()=>{
-<<<<<<< HEAD
     axios.get(`https://web-production-2b5327.up.railway.app/api/business/${id}/`,
-=======
-    axios.get(`http://127.0.0.1:8000/api/business/${id}/`,
->>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
+
       {
         headers:{
           Authorization:`Bearer ${localStorage.getItem("access_token")}`

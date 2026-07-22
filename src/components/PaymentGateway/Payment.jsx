@@ -53,11 +53,7 @@ const RazorpayPayment = () => {
       // CREATE ORDER
 
       const orderResponse = await axios.post(
-<<<<<<< HEAD
         "https://web-production-2b5327.up.railway.app/api/payment/",
-=======
-        "http://127.0.0.1:8000/api/payment/",
->>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
         {
           amount: amount,
           email:formData.email
@@ -113,11 +109,7 @@ const RazorpayPayment = () => {
           try {
 
             await axios.post(
-<<<<<<< HEAD
               "https://web-production-2b5327.up.railway.app/api/verify_payment/",
-=======
-              "http://127.0.0.1:8000/api/verify_payment/",
->>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
               {
                 razorpay_order_id:
                   response.razorpay_order_id,
