@@ -104,7 +104,11 @@ export const Registration = () => {
     
     setLoding(true);
     try{
+<<<<<<< HEAD
       const response = await axios.post("https://web-production-2b5327.up.railway.app/api/signup/",userData,
+=======
+      const response = await axios.post("http://127.0.0.1:8000/api/signup/",userData,
+>>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
         { headers :{"Content-Type":"application/json"}}
       );
 
@@ -134,7 +138,11 @@ export const Registration = () => {
     sx={{
       minHeight:"100vh",
       width:"100%",
+<<<<<<< HEAD
       backgroundImage:`url(https://web-production-2b5327.up.railway.app/static/property/images/reg2.png)`,
+=======
+      backgroundImage:`url(http://127.0.0.1:8000/static/property/images/reg2.png)`,
+>>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
       backgroundColor:"#fff",
       backgroundPosition:"center",
       backgroundRepeat:"no-repeat",
@@ -187,7 +195,11 @@ export const Registration = () => {
           mb:5,
           minHeight:"100vh",
           width:"30%",
+<<<<<<< HEAD
           backgroundImage:`url(https://web-production-2b5327.up.railway.app/static/property/images/reg.png)`,
+=======
+          backgroundImage:`url(http://127.0.0.1:8000/static/property/images/reg.png)`,
+>>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
           backgroundPosition:"center",
           backgroundSize:"cover",
           backgroundRepeat:"no-repeat"
@@ -359,6 +371,7 @@ export const Registration = () => {
                   }}
                   />
 
+<<<<<<< HEAD
                   {/* <MobileInput 
                     value={userData.mobileNo}
                     onChange={(value) => {
@@ -373,6 +386,8 @@ export const Registration = () => {
                     size="small"
                   /> */}
 
+=======
+>>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
                   <TextField
                     name="mobileNo"
                     label="Mobile Number"
@@ -389,6 +404,22 @@ export const Registration = () => {
                       pattern: "[0-9]*",
                     }}
                   />
+<<<<<<< HEAD
+=======
+                  {/* <MobileInput 
+                    value={userData.mobileNo}
+                    onChange={(value) => {
+                      const cleaned = value.replace(/\D/g, "").slice(-15);
+                      setUserData((prev) => ({
+                        ...prev,
+                        mobileNo: cleaned,   // ✅ USE cleaned value
+                      }));
+                    }}
+                    error={!!error.mobileNo}
+                    helperText={error.mobileNo}
+                    size="small"
+                  /> */}
+>>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
 
                   <Typography
                   sx={{

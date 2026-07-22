@@ -2,7 +2,11 @@ import React, { useEffect, useState } from 'react'
 import Heropage from './Herosection';
 import { Box, Typography ,Grid, Card,CardContent,CardMedia,CardActionArea, Button,Stack, CircularProgress} from '@mui/material';
 import {Swiper,SwiperSlide} from "swiper/react";
+<<<<<<< HEAD
 import {Navigation,Pagination} from "swiper/modules"
+=======
+import {Autoplay,Navigation,Pagination} from "swiper/modules"
+>>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
 import "swiper/css";
 import "swiper/css/navigation";
 import axios from 'axios';
@@ -17,7 +21,11 @@ import Bot from "../Homeassist/Bot.jsx";
 import { useNavigate }  from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 import {Link } from 'react-router-dom';
+<<<<<<< HEAD
 const video = ['https://web-production-2b5327.up.railway.app/static/property/images/video1.mp4']
+=======
+const video = ['http://127.0.0.1:8000/static/property/images/video1.mp4']
+>>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
 
 export const Home = () => {
 
@@ -40,7 +48,11 @@ export const Home = () => {
   useEffect(()=>{
     const loaddata = async()=>{
       try{
+<<<<<<< HEAD
         const res = await axios.get(`https://web-production-2b5327.up.railway.app/api/business/`)
+=======
+        const res = await axios.get(`http://127.0.0.1:8000/api/business/`)
+>>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
         setData(res.data.data)
       }catch(e){
         setError(e.message);
@@ -54,7 +66,11 @@ export const Home = () => {
   useEffect(()=>{
     const getdtata = async()=>{
       try{
+<<<<<<< HEAD
         const response = await axios.get(`https://web-production-2b5327.up.railway.app/api/business/?limit=${limit}&offset=${offset}`)
+=======
+        const response = await axios.get(`http://127.0.0.1:8000/api/business/?limit=${limit}&offset=${offset}`)
+>>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
         setLimitData(prev=> 
           offset === 0 ? response.data.data
           :[...prev,response.data.data]
@@ -76,7 +92,11 @@ export const Home = () => {
       try{
         setLoading(true);
 
+<<<<<<< HEAD
         const userdata =await axios.get(`https://web-production-2b5327.up.railway.app/api/business/?fixed=${fixed}&offset=${offset}`)
+=======
+        const userdata =await axios.get(`http://127.0.0.1:8000/api/business/?fixed=${fixed}&offset=${offset}`)
+>>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
         setFixData((prev)=>
           // offset===0 ? userdata.data.data
           // :[...prev,userdata.data.data]
@@ -391,7 +411,11 @@ export const Home = () => {
                         
                       <CardMedia 
                       component="video"
+<<<<<<< HEAD
                       image='https://web-production-2b5327.up.railway.app/static/property/images/video.mp4'
+=======
+                      image='http://127.0.0.1:8000/static/property/images/video.mp4'
+>>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
                       autoPlay        
                       muted
                       loop
@@ -495,7 +519,11 @@ export const Home = () => {
                       <CardMedia 
                       component="img"
                       alt='property'
+<<<<<<< HEAD
                       image={`https://web-production-2b5327.up.railway.app${items.images_data[0]?.image}`}
+=======
+                      image={`http://127.0.0.1:8000${items.images_data[0]?.image}`}
+>>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
                       sx={{ 
                         height:160,
                         objectFit:"cover",
@@ -757,7 +785,11 @@ export const Home = () => {
                         <CardMedia
                           component="img"
                           alt='properties'
+<<<<<<< HEAD
                           image={`https://web-production-2b5327.up.railway.app${item.images_data?.[0]?.image}`}
+=======
+                          image={`http://127.0.0.1:8000${item.images_data?.[0]?.image}`}
+>>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
                           sx={{
                             height: 150,
                             width: 150,

@@ -1,4 +1,8 @@
 import { Container, Grid, Box } from "@mui/material";
+<<<<<<< HEAD
+=======
+import { toast } from "react-toastify";
+>>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
 import Gallary from './Gallary.jsx'
 import Aboutproject from './Aboutproject.jsx';
 import ContactSeller from "../AgentProfile/Contactform.jsx";

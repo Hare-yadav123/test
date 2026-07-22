@@ -7,8 +7,13 @@ import "swiper/css";
 import "swiper/css/navigation";
 import Slidecard from "./card.jsx"
 const images = [
+<<<<<<< HEAD
     'https://web-production-2b5327.up.railway.app/static/property/images/home.png',
     'https://web-production-2b5327.up.railway.app/static/property/images/video.mp4'
+=======
+    'http://127.0.0.1:8000/static/property/images/home.png',
+    'http://127.0.0.1:8000/static/property/images/video.mp4'
+>>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
     ]
 export const Home = () => {
 

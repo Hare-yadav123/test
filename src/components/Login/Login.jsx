@@ -80,7 +80,11 @@ export const Login = () => {
   };
 
     try{
+<<<<<<< HEAD
         const response = await axios.post(`https://web-production-2b5327.up.railway.app/api/lgi/`,{
+=======
+        const response = await axios.post(`http://127.0.0.1:8000/api/lgi/`,{
+>>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
           mobileNo:loginForm.mobileNo
         },{"headers":{"Content-Type":"application/json"}})
 
@@ -91,7 +95,11 @@ export const Login = () => {
         }));
         setCaptchazKey(response.data.captcha_key);
         
+<<<<<<< HEAD
         setCaptchaUrl(`https://web-production-2b5327.up.railway.app/api/lgi/${response.data.captcha_key}/`);
+=======
+        setCaptchaUrl(`http://127.0.0.1:8000/api/lgi/${response.data.captcha_key}/`);
+>>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
       }catch(error){
         console.log("failed to catch captcha");
         if(error.response?.data?.mobileNo){
@@ -140,7 +148,11 @@ export const Login = () => {
     
     setLoading(true);
     try{
+<<<<<<< HEAD
       const response = await axios.post("https://web-production-2b5327.up.railway.app/api/cla/",
+=======
+      const response = await axios.post("http://127.0.0.1:8000/api/cla/",
+>>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
         {
           mobileNo:loginForm.mobileNo,
           captcha_key:captchakey,
@@ -168,6 +180,7 @@ export const Login = () => {
       setTimeout(()=>{navigate('/')},1000);
       
     }catch(error){
+<<<<<<< HEAD
 
       console.log("API ERROR:", error.response?.data);
 
@@ -207,6 +220,20 @@ export const Login = () => {
     //   }
   
     // }
+=======
+      const mes = error.response?.data?.error || "Request failed!. Try again..." 
+      toast.error(mes)
+      setLoading(false);
+      console.log(error.response?.data);
+      if(error.response?.data?.mobileNo){
+        toast.error(error.response.data.mobileNo[0])
+      }
+      else if(error.response?.data?.captcha){
+        toast.error(error.response.data.captcha[0])
+      }
+  
+    }
+>>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
   }
 
   return (
@@ -214,7 +241,11 @@ export const Login = () => {
     sx={{
       minHeight:"100vh",
       width:"100%",
+<<<<<<< HEAD
       backgroundImage:`url(https://web-production-2b5327.up.railway.app/static/property/images/reg2.png)`,
+=======
+      backgroundImage:`url(http://127.0.0.1:8000/static/property/images/reg2.png)`,
+>>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
       backgroundColor:"#fff",
       backgroundPosition:"center",
       backgroundRepeat:"no-repeat",
@@ -266,7 +297,11 @@ export const Login = () => {
           mb:2,
           minHeight:"100vh",
           width:"30%",
+<<<<<<< HEAD
           backgroundImage:`url(https://web-production-2b5327.up.railway.app/static/property/images/reg.png)`,
+=======
+          backgroundImage:`url(http://127.0.0.1:8000/static/property/images/reg.png)`,
+>>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
           backgroundPosition:"center",
           backgroundSize:"cover",
           backgroundRepeat:"no-repeat",

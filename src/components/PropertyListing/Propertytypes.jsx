@@ -46,7 +46,11 @@ const  Propertytypes = ()=> {
         try{
             const token = localStorage.getItem("access_token")
             console.log("Token:",token)
+<<<<<<< HEAD
             const response = await axios.post(`https://web-production-2b5327.up.railway.app/api/type/`,
+=======
+            const response = await axios.post(`http://127.0.0.1:8000/api/type/`,
+>>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
                 {
                     property_typename:propertytype.property_typename
                 },

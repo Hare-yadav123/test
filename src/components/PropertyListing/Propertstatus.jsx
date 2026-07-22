@@ -48,7 +48,11 @@ const  Propertystatus = ()=> {
         try{
             const token = localStorage.getItem("access_token")
             console.log("Token:",token)
+<<<<<<< HEAD
             const response = await axios.post(`https://web-production-2b5327.up.railway.app/api/status/`,
+=======
+            const response = await axios.post(`http://127.0.0.1:8000/api/status/`,
+>>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
                 {
                     property_statusname:status.property_statusname
                 },

@@ -1,14 +1,25 @@
 import { useEffect,useRef } from 'react';
+<<<<<<< HEAD
 import {BrowserRouter,Routes,Route,useLocation} from 'react-router-dom';
 import {useMediaQuery,ThemeProvider} from '@mui/material';
 import { createTheme} from '@mui/material/styles';
 import { Box} from '@mui/system';
+=======
+import {BrowserRouter,Router,Routes,Route,useLocation} from 'react-router-dom';
+import {useMediaQuery,ThemeProvider} from '@mui/material';
+import { createTheme} from '@mui/material/styles';
+import { border, borderTop, Box, maxWidth, positions, width } from '@mui/system';
+>>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
 import { ToastContainer} from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 import './App.css';
 import NavBar from './components/NavBar.jsx';
 import Registration  from './components/Resistration/Registration.jsx';
+<<<<<<< HEAD
 import Home from  './components/Home/Home.jsx';
+=======
+import Home from './components/Home/Home.jsx';
+>>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
 import Login from './components/Login/Login.jsx';
 import News from './components/Blogs/News.jsx';
 import Logoutpage from './components/Logout/Logoutpage.jsx';

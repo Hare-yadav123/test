@@ -7,6 +7,10 @@ import {
   Grid,
   IconButton
 } from "@mui/material";
+<<<<<<< HEAD
+=======
+import { ZoomControl } from "react-leaflet";
+>>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
 import { useParams } from "react-router-dom";
 import LocalHospitalIcon from "@mui/icons-material/LocalHospital";
 import CommuteIcon from "@mui/icons-material/Commute";
@@ -30,7 +34,11 @@ export default function NeighbourhoodMap() {
   const [data, setData] = useState([]);
   const {id} = useParams()
   useEffect(() => {
+<<<<<<< HEAD
     axios.get(`https://web-production-2b5327.up.railway.app/api/business/${id}`,
+=======
+    axios.get(`http://127.0.0.1:8000/api/business/${id}`,
+>>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
         {
             headers:{
                 Authorization:`Bearer ${localStorage.getItem("access_token")}`
