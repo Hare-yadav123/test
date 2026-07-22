@@ -359,7 +359,7 @@ export const Registration = () => {
                   }}
                   />
 
-                  <MobileInput 
+                  {/* <MobileInput 
                     value={userData.mobileNo}
                     onChange={(value) => {
                       const cleaned = value.replace(/\D/g, "").slice(-15);
@@ -371,6 +371,23 @@ export const Registration = () => {
                     error={!!error.mobileNo}
                     helperText={error.mobileNo}
                     size="small"
+                  /> */}
+
+                  <TextField
+                    name="mobileNo"
+                    label="Mobile Number"
+                    type="tel"
+                    variant="standard"
+                    fullWidth
+                    value={userData.mobileNo}
+                    onChange={handleChange}
+                    error={Boolean(error.mobileNo)}
+                    helperText={error.mobileNo || ""}
+                    inputProps={{
+                      maxLength: 10,
+                      inputMode: "numeric",
+                      pattern: "[0-9]*",
+                    }}
                   />
 
                   <Typography
