@@ -375,7 +375,20 @@ export const Registration = () => {
                       pattern: "[0-9]*",
                     }}
                   />
-                  
+                  {/* <MobileInput 
+                    value={userData.mobileNo}
+                    onChange={(value) => {
+                      const cleaned = value.replace(/\D/g, "").slice(-15);
+                      setUserData((prev) => ({
+                        ...prev,
+                        mobileNo: cleaned,   // ✅ USE cleaned value
+                      }));
+                    }}
+                    error={!!error.mobileNo}
+                    helperText={error.mobileNo}
+                    size="small"
+                  /> */}
+
                   <Typography
                   sx={{
                     mt:2,
