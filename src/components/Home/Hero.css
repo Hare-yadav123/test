@@ -1,0 +1,24 @@
+.swiper-button-next,
+.swiper-button-prev{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color:green;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 6px 30px rgba(red, green, blue, 0.1);
+    font-size: 8px;
+}
+
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 8px;          /* size of the arrow */
+  font-weight: 200;
+}
+
+.swiper{
+  --swiper-navigation-size: 8px;   /* change arrow size */
+}
