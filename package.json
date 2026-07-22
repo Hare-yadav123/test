@@ -28,11 +28,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-<<<<<<< HEAD
     "build": "CI=false react-scripts build",
-=======
-    "build": "cross-env CI=false react-scripts build",
->>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -56,10 +52,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.22",
-<<<<<<< HEAD
-=======
     "cross-env": "^10.1.0",
->>>>>>> cb63a18ddda248b2650ce42d49997ae2d717fdc0
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.17"
   }
